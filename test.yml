@@ -5,8 +5,8 @@
     become: yes
 
     tasks:
-      - name: testing
-        zypper:
-          name: git
+      - name: Installing a package 
+        zypper: 
+          name: tree 
           state: present
 ...
