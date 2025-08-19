@@ -1,7 +1,6 @@
 ---
 - name: testing
   hosts: all
-  become: yes
   connection: local
   tasks:
     - name: Ping test
