@@ -1,12 +1,7 @@
 ---
-  - name: tesing
-    hosts: all
-    conection: ssh
-    become: yes
-
-    tasks:
-      - name: Installing a package 
-        zypper: 
-          name: tree 
-          state: present
-...
+- name: testing
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Ping test
+      ping:
