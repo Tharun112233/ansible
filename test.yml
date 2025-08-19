@@ -4,7 +4,7 @@
     conection: ssh
     become: yes
 
-    task:
+    tasks:
       - name: testing
         zypper:
           name: git
