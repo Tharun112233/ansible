@@ -1,0 +1,12 @@
+---
+  - name: tesing
+    hosts: all
+    conection: ssh
+    become: yes
+
+    task:
+      - name: testing
+        zypper:
+          name: git
+          state: present
+...
