@@ -1,0 +1,11 @@
+---
+- name: testing
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Ping test
+      ansible.builtin.ping:
+
+    - name: Print Hello from Jenkins
+      ansible.builtin.debug:
+        msg: "Hello from Ansible playbook via Jenkins!"
